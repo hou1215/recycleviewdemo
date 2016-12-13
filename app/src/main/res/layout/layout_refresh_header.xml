@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_refresh_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:text="点击 item 收回刷新头部"
+        android:textColor="#00b80c"
+        android:textSize="32px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="48px"
+            android:layout_height="48px">
+
+            <ImageView
+                android:id="@+id/img_refresh_logo"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+            <com.hx.recyclerviewdemo.recyclerview.CircleView
+                android:id="@+id/img_refresh_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_refresh_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:gravity="center"
+            android:text="下拉刷新"
+            android:textColor="#666666"
+            android:textSize="32px" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
